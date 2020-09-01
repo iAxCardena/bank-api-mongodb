@@ -5,9 +5,6 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-//Comando para realizar a importacao do arquivo accounts.json no cluster
-//mongoimport --uri "mongodb+srv://process.env.USERDB:process.env.PWDDB@cluster0.0nzqc.gcp.mongodb.net/bank?retryWrites=true&w=majority" --collection accounts --drop --jsonArray --file accounts.json
-
 //Conectar ao MongoDB pelo mongoose
 (async () => {
         try {
